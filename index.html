@@ -12,7 +12,7 @@
        <header class="main-header">
          <nav class="main-menu">
            <div class="main-header-logo">
-             <img src="#" width="" height=""  alt="LOGO">
+             <img src="#" width="" height=""  alt="Лого в меню навигации">
            </div>
            <ul>
              <li class="main-menu-button"><a href="#information">Информация</a></li>
@@ -46,7 +46,7 @@
            <p>Укажите предполагаемые даты поездки,<br> 
                 и мы покажем вам лучшие предложения гостиниц в седоне
            </p>
-           <a class="botton-horel-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+           <a class="button-horel-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
          </section>
        </main>
 <!-- end main -->
@@ -56,15 +56,44 @@
          <p class="footer-hashtag">#VISITSEDONA</p>
          <div class="social">
            <ul>
-             <li class="social-button"><a href="#">Твиттер</a></li>
-             <li class="social-button"><a href="#">Фейсбук</a></li>
-             <li class="social-button"><a href="#">Ютуб</a></li>
+             <li class="social-button" aria-label="Страница Седоны в Твиттере"><a href="#">Твиттер</a></li>
+             <li class="social-button" aria-label="Страница Седоны в Фейсбуке"><a href="#">Фейсбук</a></li>
+             <li class="social-button" aria-label="Страница Седоны на Ютубе"><a href="#">Ютуб</a></li>
            </ul>
          </div>
          <p class="footer-copyright"><a href="https://htmlacademy.ru/intensive/htmlcss">Website by HTML ACADEMY</a></p>
        </footer>
 <!-- end footer -->
-    
+      
+       <section class="modal modal-search">
+         <h2 class="visually-hidden">Поиск гостиницы</h2>
+         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+           <p>
+             <label for="date-in">Дата заезда:</label>
+             <input type="text" class="date-modal-search" name="date-in" id="date-in" value="24 апреля 2017">
+             <button class="button button-calendar" type="button" value="Календарь">Выбрать дату</button>
+           </p>
+           <p>
+             <label for="date-out">Дата выезда:</label>
+             <input type="text" class="date-modal-search" name="date-out" id="date-out" value="4 июля 2017">
+             <button class="button buton-calendar" type="button" value="Календарь">Выбрать дату</button>
+           </p>
+           <p>
+             <label for="person-value-adults">Взрослые:</label>
+             <button class="button button-person" type="button" value="Меньше">-</button>
+             <input type="text" class="search-person-value" name="person-value-adults" id="person-value-adults" value="2">
+             <button class="button button-person" type="button" value="Больше">+</button>
+           </p>
+           <p>
+             <label for="person-value-kids">Дети:</label>
+             <button class="button button-person" type="button" value="Меньше">-</button>
+             <input type="text" class="search-person-value" name="person-value-kids" id="person-value-kids" value="0">
+             <button class="button button-person" type="button" value="Больше">+</button>
+           </p>
+           <button class="button" type="submit" value="Найти">Найти</button>
+         </form>
+      </section>   
+      
      </div>
    </body>
 </html>
