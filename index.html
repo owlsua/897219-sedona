@@ -3,7 +3,9 @@
    <head>
      <meta charset="utf-8">
      <title>HTML Academy: Седона</title>
+     <link href="css/normalize.css" rel="stylesheet">
      <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
    </head>
    <body>
 
@@ -12,13 +14,13 @@
        <header class="main-header">
          <nav class="main-menu">
            <div class="main-header-logo">
-             <img src="#" width="" height=""  alt="Лого в меню навигации">
+             <img src="img/logo-sedona-header.svg" width="140" height="71"  alt="Лого в меню навигации">
            </div>
-           <ul>
+           <ul class="site-navigation">
              <li class="main-menu-button"><a href="#information">Информация</a></li>
              <li class="main-menu-button"><a href="#media">Фото и видео</a></li>
              <li class="main-menu-button"><a href="#map">Карта штата</a></li>
-             <li class="main-menu-button"><a href="hotels.html">Гостаницы</a></li>
+             <li class="main-menu-button"><a href="hotels.html">Гостиницы</a></li>
            </ul>
          </nav>
        </header>
@@ -30,7 +32,8 @@
          <h1 class="visually-hidden">Добро пожаловать в Седону!</h1> 
 
          <div class="index-intro">
-           <img src="#" class="index-intro-picture" width="#" height="#" alt="Добро подаловать в Седону"> 
+           <img src="img/intro-welcome.svg" class="" width="459" height="353" alt="Добро пожаловать в Седону">
+           <img src="img/background-index-photo.jpg" class="index-intro-picture" width="1200" height="773" alt="Панорамное фото гор"> 
            <p class="index-intro-about">Седона — небольшой городок в Аризоне,<br>
               заслуживающий большего!
            </p>
@@ -43,11 +46,11 @@
     
          <section class="index-hotel-search">
            <h2>Заинтересовались?</h2>
-           <p>Укажите предполагаемые даты поездки,<br> 
+           <p class="hotel-search">Укажите предполагаемые даты поездки,<br> 
                 и мы покажем вам лучшие предложения гостиниц в седоне
            </p>
+           <a class="button button-horel-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a> 
            <div class="modal-search">
-             <a class="button-horel-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>  
              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                <p>
                  <label for="date-in">Дата заезда:</label>
@@ -71,9 +74,12 @@
                  <input type="text" class="search-person-value" name="person-value-kids" id="person-value-kids" value="0">
                  <button class="button button-person" type="button" value="Больше">+</button>
                </p>
-               <button class="button" type="submit" value="Найти">Найти</button>
+               <button class="button button-run-search" type="submit" value="Найти">Найти</button>
              </form>
            </div>
+           <!-- <p class="index-maps">
+             <img class="maps" src="img/maps.jpg" width="" height="" alt="Седона на карте">
+           </p> -->
          </section>
        </main>
 <!-- end main -->
@@ -82,7 +88,7 @@
        <footer>
          <p class="footer-hashtag">#VISITSEDONA</p>
          <div class="social">
-           <ul>
+           <ul class="social-list">
              <li class="social-button" aria-label="Страница Седоны в Твиттере"><a href="#">Твиттер</a></li>
              <li class="social-button" aria-label="Страница Седоны в Фейсбуке"><a href="#">Фейсбук</a></li>
              <li class="social-button" aria-label="Страница Седоны на Ютубе"><a href="#">Ютуб</a></li>
