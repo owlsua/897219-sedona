@@ -65,8 +65,17 @@ a {
    background-color: white;
 }
 
+.main-menu a:hover {
+  color: #81b3d2;
+}
 
+.main-menu a:active {
+  color: rgba(0, 0, 0, 0.302);
+}
 
+.main-menu-button.active {
+  color: #766357;
+}
 
 .index-intro {
   text-align: center;
@@ -84,6 +93,9 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+
+  color: #333333;
+  background-color: white;
 }
 
 
@@ -101,10 +113,12 @@ a {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+
+  color: #333333;  
 }
 
 
-.button-horel-search {
+.button-hotel-search {
   font-size: 21px;
   line-height: 26px;
   
@@ -114,6 +128,7 @@ a {
   background-color: #766357;
 }
 
+
 .button-run-search {
   font-size: 21px;
   line-height: 26px;
@@ -122,8 +137,19 @@ a {
   height: 58px;
 }
 
+.search-form input {
+  font-size: 14px;
+  line-height: 26px;
+}
 
-
+.search-form input[type="text"] {
+   font: inherit;
+   color: black;
+   text-transform: uppercase;
+ 
+   background-color: #f2f2f2;
+   border: none;
+ }
 
 
 .button-booking {
