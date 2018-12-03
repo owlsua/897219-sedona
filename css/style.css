@@ -85,7 +85,7 @@ a {
    color: #766357;
 }
 
-}
+
 .intro-welcome-picture {
    position: absolute;
    margin-top: 132px;
@@ -105,6 +105,7 @@ a {
 .index-intro-picture {
   display: block;
 }
+
 .index-intro-picture-block:after {
    position: absolute;
    background-size: 100% 100%;
@@ -131,6 +132,7 @@ a {
 .index-intro-about {
    font-size: 21px;
    line-height: 26px;
+   
 }
 
 .index-intro-features {
