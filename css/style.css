@@ -1,3 +1,14 @@
+*{box-sizing: border-box;}
+ 
+.wrapper {
+   width: 95%;
+   min-width: 1200px; 
+   height: 100%;
+   margin: 0 auto;
+   box-shadow: 0 0 10px 0 #dedede;
+   background-color: white;
+ }
+ 
 body {
    margin: 0;
    padding: 0;
@@ -9,7 +20,7 @@ body {
    color: rgb(0, 0, 0);
    text-transform: uppercase;
   
-   background-color: white;
+   background-color: #f2f2f2;
    background-position: top center;
    background-repeat: no-repeat;
 }
@@ -54,9 +65,6 @@ a {
    border: none;
 }
 
-
-
-
 .main-menu {
    font-size: 14px;
    line-height: 26px;
@@ -77,6 +85,29 @@ a {
    color: #766357;
 }
 
+.index-intro-picture-block {
+   position: relative;
+   border: 1px solid black;
+}
+
+
+.index-intro-picture-mask {
+   bottom: 0;
+   position: absolute;
+   
+   
+   
+}
+.intro-welcome-picture {
+   position: absolute;
+   margin-top: 132px;
+   padding: 0px;
+   margin-left: 50%;
+   margin-right: 50%;
+   transform: translate(-50%,0);
+   
+   background: none;
+ }
 
 
 .index-intro {
