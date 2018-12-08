@@ -32,14 +32,17 @@
          <h1 class="visually-hidden">Добро пожаловать в Седону!</h1> 
 
          <div class="index-intro">
-           <div class="index-intro-picture-block"> 
+           <div class="index-intro-pictures-block">
              <img src="img/intro-welcome.svg" class="intro-welcome-picture" width="459" height="353" alt="Добро пожаловать в Седону">
-             <img src="img/background-index-photo.jpg" class="index-intro-picture" width="100%" height="773" alt="Панорамное фото гор">
+             <img src="img/background-index-photo.jpg" class="index-intro-picture" width="100%" height="509" alt="Панорамное фото гор">
            </div>
-           <p class="index-intro-about">Седона — небольшой городок в Аризоне,<br>
+           <img src="img/intro-mask.svg" class="index-intro-picture-mask" width="100%" height="59" alt="Маска на изоражение">
+           <div class="index-intro-about-block">
+             <p class="index-intro-about">Седона — небольшой городок в Аризоне,<br>
               заслуживающий большего!
-           </p>
-           <p class="index-intro-features">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+             </p>
+             <p class="index-intro-features">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+           </div>
          </div>
     
          <section class="main-features">
@@ -47,11 +50,14 @@
          </section>
     
          <section class="index-hotel-search">
-           <h2>Заинтересовались?</h2>
-           <p class="hotel-search">Укажите предполагаемые даты поездки,<br> 
+           <div class="index-hotel-search-text-container">
+             <h2>Заинтересовались?</h2>
+             <p class="hotel-search">Укажите предполагаемые даты поездки,<br> 
                 и мы покажем вам лучшие предложения гостиниц в седоне
-           </p>
+             </p>
+           </div>
            <a class="button button-hotel-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a> 
+           
            <div class="modal-search">
              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                <p>
@@ -87,7 +93,7 @@
 <!-- end main -->
 
 <!-- begin footer -->
-       <footer>
+       <footer class="main-footer">
          <p class="footer-hashtag">#VISITSEDONA</p>
          <div class="social">
            <ul class="social-list">
