@@ -1,6 +1,6 @@
   *, 
-  *:before, 
-  *:after {
+  *!:before, 
+  *!:after {
    box-sizing: inherit;
   }
   
@@ -548,15 +548,14 @@ li.stars {
    width: 18px;
    height: 17px;
    margin-right: 7px;
+   overflow: hidden;
+   text-indent: -100px;
 }
 
 li.stars:last-of-type {
    margin-right: 0px;
 }
 
-.stars {
-   color: transparent;
-}
 
 .search-hotel-rating {
    background-color: #f2f2f2;
