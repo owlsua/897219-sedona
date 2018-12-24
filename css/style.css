@@ -289,13 +289,6 @@ a {
 
 /* ################################### */
 
-.index-modal-search-block {
-   position: relative;
-   width: 568px;
-   margin: 0 auto;
-   background: transparent;
-}
-
 .button-hotel-search {
    font-size: 21px;
    line-height: 26px;
@@ -307,6 +300,13 @@ a {
    transform: translate(-50%,0);
 
    background-color: #766357;
+}
+
+.index-modal-search-block {
+   position: relative;
+   width: 568px;
+   margin: 0 auto;
+   background: transparent;
 }
 
 .button-hotel-search:hover {
@@ -328,14 +328,57 @@ a {
    padding: 55px; 
 }
 
-p.search-form {
+.date-in-block,
+.date-out-block,
+.person-value-adults-block,
+.person-value-kids-block {
    display: flex;
+   align-items: center;
+   margin: 0px;
+   padding: 0px;
 }
 
 .search-form input {
    font-size: 14px;
    line-height: 26px;
    outline-color: #ebebeb;
+}
+
+.date-modal-search {
+   width: 308px;
+   height: 38px;
+}
+
+.button-calendar {
+   width: 39px;
+   height: 38px;
+   background-color:#f2f2f2;
+}
+
+.date-in-block,
+.date-out-block {
+   padding-bottom: 30px;
+}
+
+.person-value-adults-block,
+.person-value-kids-block {
+   padding-bottom: 54px;
+}
+
+.person-value {
+   display: flex;
+   justify-content: space-between;
+}
+
+.search-person-value {
+   width: 38px;
+   height: 38px;
+}
+
+.button-person {
+   width: 38px;
+   height: 38px;
+   background-color:#f2f2f2;
 }
 
 .search-form input[type="text"] {
