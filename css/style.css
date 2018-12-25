@@ -226,6 +226,7 @@ a {
    font-size: 14px;
    line-height: 26px;
    font-weight: 400;
+   margin-top: 27px;
    margin-bottom: 0px;
    padding: 0px;
    color: #333333;
@@ -350,10 +351,49 @@ a {
 }
 
 .button-calendar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 39px;
    height: 38px;
    background-color:#f2f2f2;
+   outline: none;
 }
+
+.button-person {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 38px;
+   height: 38px;
+   background-color:#f2f2f2;
+   outline: none;
+}
+
+.button-calendar path,
+.button-calendar rect,
+.button-person path,
+.button-person rect {
+   fill: #cacaca;
+   transition: all .2s;
+}
+
+.button-calendar:hover path,
+.button-calendar:hover rect,
+.button-person:hover path,
+.button-person:hover rect {
+   fill: #000000;
+   transition: all .2s;
+}
+
+.button-calendar:active path,
+.button-calendar:active rect,
+.button-person:active path,
+.button-person:active rect {
+   fill: #81b3d2;
+   transition: all .5s;
+}
+
 
 .date-in-block,
 .date-out-block {
@@ -375,10 +415,14 @@ a {
    height: 38px;
 }
 
-.button-person {
-   width: 38px;
-   height: 38px;
-   background-color:#f2f2f2;
+
+
+.label-adults {
+   margin-right: 41px; 
+}
+
+.label-kids {
+   margin-right: 27px; 
 }
 
 .search-form input[type="text"] {
@@ -387,6 +431,18 @@ a {
    text-transform: uppercase;
    background-color: #f2f2f2;
    border: none;
+  
+}
+
+.date-in-block input[type="text"],
+.date-out-block input[type="text"] {
+   padding-left: 13px;
+   margin-left: auto;
+}
+
+.person-value-adults-block input[type="text"],
+.person-value-kids-block input[type="text"]  {
+   padding-left: 16px;
 }
 
  .search-form input[type="text"]:hover {
@@ -421,6 +477,7 @@ a {
 
 .hotels-search {
    position: relative;
+   box-sizing: border-box;
 }
 
 .searching-list {
@@ -430,54 +487,53 @@ a {
    min-width: 1200px;
    box-sizing: border-box;
    background-color: #ffffff;
-
    padding: 0px;
    margin: 0px;
+   box-sizing: border-box;
 }
 
-.searching-result-item {
-   border-top: 1px solid #e5e5e5; 
-}
-
-.searching-result-item:last-child {
-   border-bottom: 1px solid #e5e5e5; 
-}
-
-.searching-result-item li {
+.searching-item {
    position: relative;
    display: flex;
    padding-left: 72px;
    padding-right: 72px;
+   border-top: 1px solid #e5e5e5;
+} 
+
+.searching-list:last-child {
+   border-bottom: 1px solid #e5e5e5;
 }
 
 .search-item-image {
-   height: 90px;
+   display: flex;
    margin: 0px;
    padding-top: 30px;
    padding-right: 30px;
    padding-bottom: 30px;
 }
 
+img.search-item-image {
+   display: flex;
+}
 
 .searching-item-block {
    display: flex;
    flex-grow: 1;
    flex-wrap: wrap;
    margin-right: auto; 
-   padding-top: 26px;
+   padding-top: 24px;
    padding-bottom: 31px;
    flex-direction: column;
 }
-
+/* ПОИГРАТЬСЯ С ОТСТУПАМИ */
 .item-price-type {
    display: flex;
-   justify-content: space-between;
    padding-bottom: 13px;
    font-weight: 400;
 }
 
-.search-item-price {
-   padding-right: 597px;
+p.search-item-type {
+   min-width: 116px;
 }
 
 .searching-item-block h3,
@@ -493,7 +549,7 @@ a {
 a.button-detail,
 a.button-booking {
   padding-top: 3px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   padding-left: 17px;
   padding-right: 17px;
 }
