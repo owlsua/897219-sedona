@@ -643,7 +643,6 @@ p.future-number {
  
  .filter-range h2 {
     margin: 0;
-    margin-top: 1px;
     margin-bottom: 10px;
  }
 
@@ -684,6 +683,7 @@ p.future-number {
 
 .range-controls {
    position: relative;
+   display: block;
 }
  
 .scale {
@@ -699,14 +699,36 @@ p.future-number {
 }
 
 .range-toggle {
+   box-sizing: content-box;
    position: absolute;
-   top: -8px;
+   top: -9px;
    width: 4px;
    height: 4px;
    background-color: #ababab;
    border: 8px solid #ffffff;
    border-radius: 50%;
  }
+
+ .range-toggle-min {
+   left: 0;
+ }
+ 
+ .range-toggle-max {
+   left: 80%;
+ }
+
+ .btn-transparent {
+    width: 137px;
+    height: 36px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    margin-left: 85px;
+    text-transform: uppercase;
+ }
+
+
 /* ####HOTELS-RESULT-SORTING#### */
 
 .hotels-result-sorting {
@@ -733,7 +755,7 @@ p.future-number {
    font-size: 21px;
    line-height: 26px;
    font-weight: 700;
-   margin-right: 50px;
+   margin-right: 48px;
 }
 
 .hotels-sorting {
