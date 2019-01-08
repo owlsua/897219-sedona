@@ -34,22 +34,65 @@
          <h1 class="visually-hidden">Поиск отеля</h1> 
          
          <section class="hotels-searching-filter">
+           
            <div class="filter-infrastructure">
              <h2>Инфраструктура:</h2>
-             <input type="checkbox" name="" class="">
-             <input type="checkbox" name="" class="">
-             <input type="checkbox" name="" class="">
+             <label class="filter-chekbox">
+               <input type="checkbox" name="pool" class="visually-hidden" checked>
+               <span class="checkbox-indicator"></span>
+               Бассеин
+             </label>
+
+             <label class="filter-chekbox">
+               <input type="checkbox" name="parking" class="visually-hidden">
+               <span class="checkbox-indicator"></span>
+               Парковка
+             </label>
+
+             <label class="filter-chekbox">
+               <input type="checkbox" name="wifi" class="visually-hidden">
+               <span class="checkbox-indicator"></span>
+               WI-FI
+             </label>
            </div>
+
            <div class="filter-housing-type">
              <h2>Тип Жилья:</h2>
-             <input type="checkbox" name="" class="">
-             <input type="checkbox" name="" class="">
-             <input type="checkbox" name="" class="">
+             <label class="filter-chekbox">
+               <input type="checkbox" name="hotel" class="visually-hidden" checked>
+               <span class="checkbox-indicator"></span>
+               Гостиница
+             </label>
+             
+             <label class="filter-chekbox">
+               <input type="checkbox" name="motel" class="visually-hidden" checked>
+               <span class="checkbox-indicator"></span>
+               Мотель
+             </label>
+
+             <label class="filter-chekbox">
+               <input type="checkbox" name="apartments" class="visually-hidden" checked>
+               <span class="checkbox-indicator"></span>
+               Апартаменты
+             </label>
            </div>
-           <div class="filter-pricing">
-               <h2>Стоимость в сутки(р):</h2>
-               <button class="button">Показать</button> 
-           </div>
+
+           <div class="filter-range">
+            <h2>Стоимость в сутки (р):</h2>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+      
          </section>
 
          <section class="hotels-result-sorting">

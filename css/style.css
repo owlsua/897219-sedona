@@ -121,7 +121,7 @@ a {
 .main-menu-button {
    width: 20%;
    padding-bottom: 16px;
-   padding-top: 15px;
+   padding-top: 14px;
 }
 
 .main-menu-button:nth-child(4n-3) a,
@@ -576,18 +576,23 @@ p.future-number {
    padding-left: 72px;
    padding-right: 72px;
    padding-top: 27px;
+  
    color: #ffffff;
+   box-sizing: border-box;
 }
 
 .hotels-searching-filter h2 {
    font-size: 16px;
    line-height: 21px;
+   margin: 0px;
+   margin-left: -1px;
+   margin-bottom: 24px;
 }
 
 .filter-infrastructure {
    display: flex;
    flex-direction: column;
-   margin-right: 115px;
+   margin-right: 120px;
 }
 
 .filter-housing-type {
@@ -596,6 +601,112 @@ p.future-number {
    margin-right: auto;
 }
 
+.filter-chekbox {
+   display: flex;
+   position: relative;
+   padding-left: 40px;
+   font-weight: 400; 
+   margin-bottom: 25px;
+}
+
+.filter-chekbox:nth-last-child(1) {
+   margin-bottom: 32px;
+}
+
+.filter-chekbox input[type="checkbox"] + .checkbox-indicator {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 23px;
+   height: 23px;
+   background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-chekbox input[type="checkbox"]:focus + .checkbox-indicator {
+   outline: thin dotted;
+   outline: 5px auto -webkit-focus-ring-color;
+ }
+
+.filter-chekbox input[type="checkbox"]:checked + .checkbox-indicator {
+   content: '';
+   width: 27px;
+   height: 23px;
+   background-image: url(../img/checkbox-on.svg);
+}
+
+
+
+.filter-range {
+   width: 318px;
+   box-sizing: border-box;
+ }
+ 
+ .filter-range h2 {
+    margin: 0;
+    margin-top: 1px;
+    margin-bottom: 10px;
+ }
+
+ .price-controls {
+    position: relative;
+    display: flex;
+    height: 36px;
+    border: 2px solid #ffffff;
+    font-weight: 400;
+    border-radius: 3px;
+    margin-bottom: 20px;
+ }
+
+ .price-controls:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+ }
+
+ .price-controls input {
+    width: 69px;
+    height: 32px;
+    border: none;
+    background: none;
+    color: #ffffff;
+    
+ }
+
+ .min-price {
+   padding-left: 65px;
+   margin-right: 57px;
+ }
+
+.range-controls {
+   position: relative;
+}
+ 
+.scale {
+   height: 2px;
+   background-color: rgba(255, 255, 255, 0.3);
+   margin-bottom: 32px;
+}
+
+.bar {
+   width: 80%;
+   height: 2px;
+   background-color: #ffffff;
+}
+
+.range-toggle {
+   position: absolute;
+   top: -8px;
+   width: 4px;
+   height: 4px;
+   background-color: #ababab;
+   border: 8px solid #ffffff;
+   border-radius: 50%;
+ }
 /* ####HOTELS-RESULT-SORTING#### */
 
 .hotels-result-sorting {
