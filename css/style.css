@@ -187,10 +187,6 @@ a {
    background: none;   
 }
 
-.hotels-sorting li {
-   margin-right: 34px;
-}
-
 /* ########### ABOUT-BLOCK ########### */
  
 .index-intro-about-block {
@@ -709,15 +705,20 @@ p.future-number {
    border-radius: 50%;
  }
 
- .range-toggle-min {
+.range-toggle-min {
    left: 0;
  }
  
- .range-toggle-max {
+.range-toggle-max {
    left: 80%;
  }
 
- .btn-transparent {
+.range-toggle:hover {
+   border: 10px solid #ffffff;
+   top: -11px;
+ }
+
+.btn-transparent {
     width: 137px;
     height: 36px;
     color: #ffffff;
@@ -728,6 +729,10 @@ p.future-number {
     text-transform: uppercase;
  }
 
+.btn-transparent:hover {
+   background-color: #ffffff;
+   color: #000000;
+}
 
 /* ####HOTELS-RESULT-SORTING#### */
 
@@ -758,12 +763,21 @@ p.future-number {
    margin-right: 48px;
 }
 
+.hotels-result-sorting p {
+   padding-top: 3px;
+}
+
 .hotels-sorting {
    display: flex;
    margin: 0px;
    padding: 0px;
+   padding-top: 3px;
    margin-left: 40px;
    margin-right: auto;
+}
+
+.hotels-sorting li {
+   margin-right: 33px;
 }
 
 .sorting-price,
@@ -782,6 +796,7 @@ p.future-number {
    display: flex;
    margin: 0px;
    padding: 0px;
+   margin-right: 1px;
 
 }
 
@@ -793,7 +808,7 @@ p.future-number {
 }
 
 .sorting-button-ascending {
-   margin-right: 9px;
+   margin-right: 12px;
 }
 
 .sorting-button-ascending path,
@@ -819,6 +834,7 @@ p.future-number {
 
 
 /* ####HOTELS-SEARCH-RESULT#### */
+
 .searching-list {
    position: relative;
    display: flex;
@@ -938,6 +954,7 @@ a.button-detail {
    line-height: 26px;
    font-weight: 700;
    color: black;
+   padding-top: 1px;
 }
 
 .hotels-name:hover {
