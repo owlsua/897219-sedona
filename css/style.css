@@ -596,7 +596,8 @@ p.future-number {
    margin-right: auto;
 }
 
-.filter-chekbox {
+.filter-chekbox,
+.filter-chekbox-disable  {
    display: flex;
    position: relative;
    padding-left: 40px;
@@ -615,6 +616,7 @@ p.future-number {
    width: 23px;
    height: 23px;
    background-image: url(../img/checkbox-off.svg);
+   background-repeat: no-repeat;
 }
 
 .filter-chekbox input[type="checkbox"]:focus + .checkbox-indicator {
@@ -627,9 +629,18 @@ p.future-number {
    width: 27px;
    height: 23px;
    background-image: url(../img/checkbox-on.svg);
+   background-repeat: no-repeat;
 }
 
-
+.filter-chekbox-disable input[type="checkbox"] + .checkbox-indicator {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 23px;
+   height: 23px;
+   background-image: url(../img/checkbox-disable.svg);
+   background-repeat: no-repeat;
+}
 
 .filter-range {
    width: 318px;
