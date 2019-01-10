@@ -23,14 +23,12 @@ html {
 body {
    margin: 0;
    padding: 0;
-
    font-family: "PT Sans", Arial, sans-serif;
    font-size: 14px;
    line-height: 21px; 
    font-weight: 700;
    color: rgb(0, 0, 0);
    text-transform: uppercase;
-  
    background-color: #f2f2f2;
    background-position: top center;
    background-repeat: no-repeat;
@@ -546,7 +544,6 @@ p.future-number {
 .button-run-search {
    font-size: 21px;
    line-height: 26px;
-  
    width: 458px;
    height: 58px;
 }
@@ -574,7 +571,6 @@ p.future-number {
    padding-left: 72px;
    padding-right: 72px;
    padding-top: 27px;
-  
    color: #ffffff;
    box-sizing: border-box;
 }
@@ -623,10 +619,10 @@ p.future-number {
 .filter-chekbox input[type="checkbox"]:focus + .checkbox-indicator {
    outline: thin dotted;
    outline: 5px auto -webkit-focus-ring-color;
- }
+}
 
 .filter-chekbox input[type="checkbox"]:checked + .checkbox-indicator {
-   content: '';
+   content: "";
    width: 27px;
    height: 23px;
    background-image: url(../img/checkbox-on.svg);
@@ -655,7 +651,7 @@ p.future-number {
  }
 
  .price-controls:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     height: 22px;
@@ -666,24 +662,23 @@ p.future-number {
  }
 
  .price-controls input {
-    width: 69px;
-    height: 32px;
-    border: none;
-    background: none;
-    color: #ffffff;
-    
- }
+   width: 69px;
+   height: 32px;
+   border: none;
+   background: none;
+   color: #ffffff; 
+}
 
  .min-price {
    padding-left: 65px;
    margin-right: 57px;
- }
+}
 
 .range-controls {
    position: relative;
    display: block;
 }
- 
+
 .scale {
    height: 2px;
    background-color: rgba(255, 255, 255, 0.3);
@@ -705,30 +700,30 @@ p.future-number {
    background-color: #ababab;
    border: 8px solid #ffffff;
    border-radius: 50%;
- }
+}
 
 .range-toggle-min {
    left: 0;
- }
+}
  
 .range-toggle-max {
    left: 80%;
- }
+}
 
 .range-toggle:hover {
    border: 10px solid #ffffff;
    top: -11px;
- }
+}
 
 .btn-transparent {
-    width: 137px;
-    height: 36px;
-    color: #ffffff;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 3px;
-    margin-left: 85px;
-    text-transform: uppercase;
+   width: 137px;
+   height: 36px;
+   color: #ffffff;
+   background-color: transparent;
+   border: 2px solid #ffffff;
+   border-radius: 3px;
+   margin-left: 85px;
+   text-transform: uppercase;
  }
 
 .btn-transparent:hover {
@@ -934,7 +929,6 @@ a.button-detail {
 .button-booking {
    font-size: 14px;
    line-height: 21px;
-  
    color: #ffffff;
    background-color: #766357;
 }
@@ -1069,7 +1063,7 @@ ul.social-list {
 
 
 .social-button:after {
-   content:'';
+   content: "";
    position: absolute;
    left: 50%;
    top: 50%;
@@ -1101,10 +1095,9 @@ ul.social-list {
 }
 
 .social-button:active:after {
-  opacity: 0.7;
-  transition: all .5s; 
- }
-
+   opacity: 0.7;
+   transition: all .5s; 
+}
 
  .footer-copyright {
    display: flex;
