@@ -566,6 +566,7 @@ p.future-number {
 .hotels-searching-filter {
    display: flex;
    background-image: url(../img/filter-block-background.jpg);
+   background-color: #7194ba;
    background-repeat: no-repeat;
    background-size: cover;
    padding-left: 72px;
