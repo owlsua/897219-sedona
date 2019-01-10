@@ -633,35 +633,35 @@ p.future-number {
 .filter-range {
    width: 318px;
    box-sizing: border-box;
- }
+}
  
- .filter-range h2 {
-    margin: 0;
-    margin-bottom: 10px;
- }
+.filter-range h2 {
+   margin: 0;
+   margin-bottom: 10px;
+}
 
- .price-controls {
-    position: relative;
-    display: flex;
-    height: 36px;
-    border: 2px solid #ffffff;
-    font-weight: 400;
-    border-radius: 3px;
-    margin-bottom: 20px;
- }
+.price-controls {
+   position: relative;
+   display: flex;
+   height: 36px;
+   border: 2px solid #ffffff;
+   font-weight: 400;
+   border-radius: 3px;
+   margin-bottom: 20px;
+}
 
- .price-controls:after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 22px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
- }
+.price-controls:after {
+   content: "";
+   position: absolute;
+   width: 2px;
+   height: 22px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #ffffff;
+}
 
- .price-controls input {
+.price-controls input {
    width: 69px;
    height: 32px;
    border: none;
@@ -669,7 +669,7 @@ p.future-number {
    color: #ffffff; 
 }
 
- .min-price {
+.min-price {
    padding-left: 65px;
    margin-right: 57px;
 }
@@ -900,10 +900,10 @@ p.search-item-type {
 
 a.button-detail,
 a.button-booking {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 17px;
-  padding-right: 17px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 17px;
+   padding-right: 17px;
 }
 
 a.button-detail {
