@@ -409,12 +409,16 @@ p.future-number {
 }
 
 .modal-search {
-   display: block;
+   display: none;
    position: absolute;
    z-index: 200;
    background-color: #ffffff;
    padding: 55px; 
-   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); 
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.modal-search-show {
+   display: block;
 }
 
 .date-in-block,
@@ -563,7 +567,7 @@ p.future-number {
 
 /* ####HOTELS-SEARCHING-FILTER#### */
 
-.hotels-searching-filter {
+.hotels-searching-filter-form {
    display: flex;
    background-image: url(../img/filter-block-background.jpg);
    background-color: #7194ba;
@@ -632,13 +636,23 @@ p.future-number {
    background-repeat: no-repeat;
 }
 
-.filter-chekbox-disable input[type="checkbox"] + .checkbox-indicator {
+.filter-chekbox input[type="checkbox"]:disabled + .checkbox-indicator {
    position: absolute;
    top: 0px;
    left: 0px;
    width: 23px;
    height: 23px;
-   background-image: url(../img/checkbox-disable.svg);
+   background-image: url(../img/checkbox-off-disable.svg);
+   background-repeat: no-repeat;
+}
+
+.filter-chekbox input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 27px;
+   height: 23px;
+   background-image: url(../img/checkbox-on-disable.svg);
    background-repeat: no-repeat;
 }
 
@@ -801,6 +815,20 @@ p.future-number {
    border: none;
 }
 
+.sorting-price:hover,
+.sorting-type:hover,
+.sorting-rating:hover {
+   color: #81b3d2;
+   border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-price:active,
+.sorting-type:active,
+.sorting-rating:active {
+   color: #000000;
+   border: none;
+}
+
 .sorting-descending-ascending {
    display: flex;
    margin: 0px;
@@ -952,7 +980,7 @@ a.button-detail {
 
 .button-booking:active {
    background-color:  #503e33;
-   color: rgba(214, 52, 52, 0.3);
+   color: rgba(255, 255, 255, 0.3);
    transition: all .5s;
 }
 
