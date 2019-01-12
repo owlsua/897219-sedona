@@ -199,8 +199,11 @@ a {
 .index-intro-about {
    font-size: 21px;
    line-height: 26px;
+   width: 50%;
    margin-top: 60px;
    margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
    text-align: center;
 }
 
@@ -211,7 +214,7 @@ a {
    margin-top: 27px;
    margin-bottom: 0px;
    padding: 0px;
-   padding-bottom: 52px;
+   padding-bottom: 51px;
    color: #333333;
    background-color: #ffffff;
    text-align: center;
@@ -233,6 +236,10 @@ a {
    margin: 0px;
    padding-top: 46px;
    flex-grow: 1;
+}
+
+.future-block1-text {
+   padding-top: 47px;
 }
 
 .future-block1-text h2,
@@ -263,7 +270,7 @@ p.future-number {
 }
 
 .future-block-housing-food-souvenirs {
-   padding-top: 160px;
+   padding-top: 161px;
    padding-bottom: 82px;
 }
 
