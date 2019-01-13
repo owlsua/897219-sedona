@@ -228,6 +228,11 @@ a {
    font-weight: 400;
 }
 
+.future-block-housing-food-souvenirs,
+.future-block3-block4-block5 {
+   flex-wrap: wrap;
+}
+
 .future-block1-text,
 .future-block2-text {
    color: #ffffff;
@@ -321,7 +326,7 @@ p.future-number {
 .future-block3-block4-block5 {
    background-color: #eeeeee;
    padding-top: 47px;
-   padding-bottom: 45px;
+   padding-bottom: 59px;
 }
 
 .futer-block3,
@@ -331,6 +336,22 @@ p.future-number {
    text-align: center;
 }
 
+p.future-detail {
+   width: 76%;
+   margin: 0 auto;
+}
+
+.futer-block3 p.future-detail {
+   width: 65%;
+}
+
+.futer-block4 p.future-detail {
+   width: 70%;
+}
+
+.futer-block5 p.future-detail {
+   width: 64%;
+}
 
 /* ############ HOTEL-SEARCH-BLOCK ########### */
 
@@ -416,16 +437,24 @@ p.future-number {
 }
 
 .modal-search {
-   display: none;
+   display: block;
    position: absolute;
    z-index: 200;
+   max-height: 0px;
+   overflow: hidden;
    background-color: #ffffff;
-   padding: 55px; 
+   padding: 0px;
+   padding-left: 55px;
+   padding-right: 55px; 
    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+   transition: all .2s;
 }
 
 .modal-search-show {
    display: block;
+   max-height: 500px;
+   padding: 55px;
+   transition: all .6s;
 }
 
 .date-in-block,
@@ -799,6 +828,7 @@ p.future-number {
 
 .hotels-sorting {
    display: flex;
+   flex-wrap: wrap;
    margin: 0px;
    padding: 0px;
    padding-top: 3px;
