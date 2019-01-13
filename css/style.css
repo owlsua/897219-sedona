@@ -522,10 +522,12 @@ p.future-detail {
    transition: all .5s;
 }
 
-
-.date-in-block,
 .date-out-block {
    padding-bottom: 30px;
+}
+
+.date-in-block {
+   padding-bottom: 29px;
 }
 
 .person-value-adults-block,
