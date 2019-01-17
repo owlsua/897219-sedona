@@ -715,11 +715,11 @@ p.future-detail {
    padding-left: 16px;
 }
 
- .search-form input[type="text"]:hover {
+.search-form input[type="text"]:hover {
    background-color: #ebebeb;
 }
 
- .search-form input[type="text"]:focus {
+.search-form input[type="text"]:focus {
    background-color: #ffffff;
 } 
 
@@ -1429,7 +1429,7 @@ ul.social-list {
    transition: all .5s; 
 }
 
- .footer-copyright {
+.footer-copyright {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
