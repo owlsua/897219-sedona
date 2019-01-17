@@ -233,6 +233,10 @@ a {
    flex-wrap: wrap;
 }
 
+.future-block-housing-food-souvenirs div {
+   margin-top: 161px;
+}
+
 .future-block1-text,
 .future-block2-text {
    color: #ffffff;
@@ -275,7 +279,6 @@ p.future-number {
 }
 
 .future-block-housing-food-souvenirs {
-   padding-top: 161px;
    padding-bottom: 82px;
 }
 
