@@ -374,6 +374,11 @@ p.future-detail {
    margin: 0 auto;
 }
 
+.future-block1 p.future-detail {
+   width: 73%;
+   margin: 0 auto;
+}
+
 .futer-block3 p.future-detail {
    width: 65%;
 }
