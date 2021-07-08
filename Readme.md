@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 
-Github pages - https://owlsua.github.io/897219-sedona/
+🚀🚀 Github pages - https://owlsua.github.io/897219-sedona/
 
 
 
