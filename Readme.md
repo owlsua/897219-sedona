@@ -1,5 +1,10 @@
 # Личный проект «Седона»
 
+
+Github pages - https://owlsua.github.io/897219-sedona/
+
+
+
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/23/user/897219).
 * Наставник: [Дмитрий Казанцев]
 (https://htmlacademy.ru/profile/id24186).
