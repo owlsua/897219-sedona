@@ -5,7 +5,7 @@
 
 
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/23/user/897219).
+* Студент: [Alexander Romashko](https://up.htmlacademy.ru/htmlcss/23/user/897219).
 * Наставник: [Дмитрий Казанцев]
 (https://htmlacademy.ru/profile/id24186).
 
